@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "autoswap",
+  "version": "${version}",
+  "name": "AutoSwap",
+  "description": "Автоматически перекладывает тотем в левую руку, свап шара по клавише.",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.autoswap.AutoSwapClient"
+    ],
+    "modmenu": [
+      "com.example.autoswap.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
